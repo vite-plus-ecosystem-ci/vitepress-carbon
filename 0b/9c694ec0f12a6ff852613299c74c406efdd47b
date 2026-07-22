@@ -1,0 +1,25 @@
+.npmrc
+  s_61e825252de171::t_7532f159ef1f00 2-3
+__tests__/integration/theme-demo-render.test.ts
+  s_61e825252de171::t_a0bc73d818883b 6
+package.json
+  s_61e825252de171::t_00cf6bac4badfc 45,55-71
+pnpm-workspace.yaml
+  s_61e825252de171::t_046f31d8af6f00 5-7
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "0b9c694ec0f12a6ff852613299c74c406efdd47b",
+  "prompts": {},
+  "sessions": {
+    "s_61e825252de171": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_075d2910cffec5F5nSxiexsTBV",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "wan9chi <dk4rest@gmail.com>"
+    }
+  }
+}
