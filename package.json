@@ -42,6 +42,7 @@
     "@types/mark.js": "^8.11.12",
     "globals": "^17.4.0",
     "typescript": "^5.9.3",
+    "vite": "catalog:",
     "vite-plus": "catalog:",
     "vitest": "catalog:"
   },
@@ -51,5 +52,21 @@
   "engines": {
     "node": "^20.19.0 || >=22.18.0"
   },
-  "packageManager": "pnpm@9.9.0"
+  "packageManager": "pnpm@9.9.0",
+  "pnpm": {
+    "overrides": {
+      "vite": "npm:@voidzero-dev/vite-plus-core@0.0.0-commit.9855245a469b178066c25a5d45c971c130565d89",
+      "vitest": "4.1.10"
+    },
+    "peerDependencyRules": {
+      "allowAny": [
+        "vite",
+        "vitest"
+      ],
+      "allowedVersions": {
+        "vite": "*",
+        "vitest": "*"
+      }
+    }
+  }
 }
