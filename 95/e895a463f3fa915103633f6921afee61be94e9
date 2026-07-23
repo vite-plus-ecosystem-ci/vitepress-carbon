@@ -1,0 +1,21 @@
+package.json
+  s_31ddc839136cf9::t_3e402f8a8c41c6 58
+pnpm-workspace.yaml
+  s_31ddc839136cf9::t_ea16f2ba3a51f7 5,7
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "95e895a463f3fa915103633f6921afee61be94e9",
+  "prompts": {},
+  "sessions": {
+    "s_31ddc839136cf9": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_073404bb5ffepuizWNCVdWolYi",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "wan9chi <dk4rest@gmail.com>"
+    }
+  }
+}
