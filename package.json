@@ -79,5 +79,5 @@
       "ws": "^8.21.0"
     }
   },
-  "packageManager": "pnpm@9.9.0"
+  "packageManager": "pnpm@9.15.9"
 }
