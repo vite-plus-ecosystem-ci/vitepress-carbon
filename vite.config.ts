@@ -16,6 +16,7 @@ export default defineConfig({
     ]
   },
   test: {
+    clearMocks: false,
     include: ['__tests__/**/*.test.ts'],
     exclude: ['**/node_modules/**', '**/dist/**'],
     // Node by default (the integration suite shells out to real builds);
