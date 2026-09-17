@@ -78,7 +78,12 @@
       "typescript": "$typescript",
       "ws": "^8.21.0",
       "vite@*": "npm:@voidzero-dev/vite-plus-core@0.0.0-commit.fba044cf40fea5a7bf4a2ee97822f174eab33dfa",
-      "vitest@*": "4.1.11"
+      "vitest@*": "4.1.11",
+      "happy-dom": "20.11.1",
+      "@vue/test-utils": "2.4.11",
+      "@vueuse/core@^14": "14.3.0",
+      "@vueuse/shared@^14": "14.3.0",
+      "vue": "3.5.40"
     },
     "peerDependencyRules": {
       "allowAny": [
