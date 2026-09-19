@@ -13,3 +13,4 @@ package-lock.json
 /packages/cli/docs/
 /packages/storybook/dist/
 storybook-static/
+.vitest/
