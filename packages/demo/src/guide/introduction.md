@@ -16,6 +16,7 @@ To create a project with VitePress Carbon theme, you have three options:
    template: [click here](https://github.com/new?template_name=carbon-starter&template_owner=brenoepics).
 
 2. Use the `vpcar` CLI tool to initialize a new VitePress Carbon project:
+
    ::: code-group
 
    ```sh [npm]

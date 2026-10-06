@@ -8,7 +8,14 @@
  * verbatim — a component that "fixed" overflow by dropping characters would
  * fail here.
  */
-import { afterEach, beforeEach, describe, expect, test, vi } from 'vitest'
+import {
+  afterEach,
+  beforeEach,
+  describe,
+  expect,
+  test,
+  vi
+} from 'vite-plus/test'
 import VPLink from '../../packages/theme/src/theme/components/VPLink.vue'
 import {
   LONG_TEXTS,
