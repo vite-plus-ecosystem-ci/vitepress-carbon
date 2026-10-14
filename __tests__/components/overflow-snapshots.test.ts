@@ -10,7 +10,7 @@
  *     components that render page titles, so quietly dropping `min-width: 0`
  *     or `text-overflow` shows up in review as a snapshot diff.
  */
-import { afterEach, describe, expect, test } from 'vitest'
+import { afterEach, describe, expect, test } from 'vite-plus/test'
 import { parseCss, readComponentStyles } from '../support/css.js'
 import {
   componentPath,
