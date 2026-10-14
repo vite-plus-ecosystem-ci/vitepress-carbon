@@ -80,7 +80,9 @@
       "svgo": "^4.1.0",
       "typescript": "$typescript",
       "ws": "^8.21.0",
-      "vite@*": "npm:@voidzero-dev/vite-plus-core@0.0.0-commit.3b99001a24f162be6a4478c3b97f3d0eb81c96c8"
+      "vite@*": "npm:@voidzero-dev/vite-plus-core@0.0.0-commit.3b99001a24f162be6a4478c3b97f3d0eb81c96c8",
+      "vitepress>vite": "^6.4.3",
+      "vitepress-plugin-llms>vite": "^6.4.3"
     },
     "peerDependencyRules": {
       "allowAny": [
@@ -88,6 +90,13 @@
       ],
       "allowedVersions": {
         "vite": "*"
+      }
+    },
+    "packageExtensions": {
+      "vitepress-plugin-llms": {
+        "dependencies": {
+          "vite": "^6.4.3"
+        }
       }
     }
   },
