@@ -63,7 +63,7 @@
     "node": "^20.19.0 || >=22.18.0"
   },
   "pnpm": {
-    "comment": "Overrides for transitive dependencies (pnpm@9 reads pnpm.overrides from package.json, not from pnpm-workspace.yaml). Security patches are caret-bounded to the compatible major so parents keep resolving; the typescript pin keeps the toolchain on the declared 5.x line so autoInstallPeers can't pull the TS 7 compiler and break vue-tsc/unbuild.",
+    "comment": "Overrides for transitive dependencies (pnpm@9 reads pnpm.overrides from package.json, not from pnpm-workspace.yaml). Security patches are caret-bounded to the compatible major so parents keep resolving; the typescript pin keeps the toolchain on the declared 5.x line so autoInstallPeers can't pull the TS 7 compiler and break vue-tsc/unbuild. The vitepress>vite pin keeps VitePress 1.x on Rollup-based Vite 6: its generateBundle hook adds the .lean.js page chunks by assigning into the bundle object, which Rolldown-based Vite ignores. vitepress-plugin-llms imports Vite types without declaring vite, so packageExtensions declares it and pins it to the same Vite 6 as VitePress.",
     "overrides": {
       "@xmldom/xmldom": "^0.9.12",
       "brace-expansion": "^5.0.9",
@@ -80,7 +80,16 @@
       "svgo": "^4.1.0",
       "typescript": "$typescript",
       "ws": "^8.21.0",
-      "vite@*": "npm:@voidzero-dev/vite-plus-core@0.0.0-commit.824e84de80cbc1af30829ed024a4158d416dbad3"
+      "vite@*": "npm:@voidzero-dev/vite-plus-core@0.0.0-commit.824e84de80cbc1af30829ed024a4158d416dbad3",
+      "vitepress>vite": "^6.4.3",
+      "vitepress-plugin-llms>vite": "^6.4.3"
+    },
+    "packageExtensions": {
+      "vitepress-plugin-llms": {
+        "dependencies": {
+          "vite": "^6.4.3"
+        }
+      }
     },
     "peerDependencyRules": {
       "allowAny": [
