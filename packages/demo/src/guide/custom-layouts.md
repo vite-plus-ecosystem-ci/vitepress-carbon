@@ -25,7 +25,7 @@ layout: page
 - `layout: page` keeps the site chrome (navbar, sidebar, footer) and gives you an empty canvas inside it.
 - `layout: false` removes _everything_, including the navbar.
 - `layout: MyLayout` swaps the content area for your own component while keeping the chrome — this is the one you want for a blog.
-  :::
+:::
 
 ## Creating a custom layout
 
