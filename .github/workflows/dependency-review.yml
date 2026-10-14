@@ -14,6 +14,8 @@ permissions:
 
 jobs:
   dependency-review:
+    # Ecosystem-ci smoke test: the fork has no Dependency graph, which this action requires.
+    if: ${{ github.repository_owner != 'vite-plus-ecosystem-ci' }}
     runs-on: ubuntu-latest
     steps:
       - name: 'Checkout Repository'
