@@ -203,7 +203,7 @@ function onMouseLeave() {
   align-items: center;
   gap: 6px;
   padding: 0 0.1em 0.1em;
-  background: linear-gradient(currentColor 0 0) bottom left/ 0 0.1em no-repeat;
+  background: linear-gradient(currentColor 0 0) bottom left / 0 0.1em no-repeat;
   transition: background-size 0.5s;
   color: var(--vp-c-text-1);
   font-weight: 600;
@@ -213,7 +213,7 @@ function onMouseLeave() {
 
 .link-text:hover {
   text-decoration: underline;
-  background: linear-gradient(currentColor 0 0) bottom left/ 100% 0.1em
+  background: linear-gradient(currentColor 0 0) bottom left / 100% 0.1em
     no-repeat;
 }
 

@@ -147,9 +147,7 @@ const { site, page, frontmatter, isDark } = useData()
 </script>
 
 <template>
-  <p>
-    Reading <code>{{ page.relativePath }}</code> from {{ site.title }}
-  </p>
+  <p>Reading <code>{{ page.relativePath }}</code> from {{ site.title }}</p>
   <p v-if="frontmatter.author">Written by {{ frontmatter.author }}</p>
 </template>
 ```
