@@ -14,7 +14,7 @@
  * truncatable node with its full text preserved in `title`) and the CSS
  * contract that makes truncation possible.
  */
-import { afterEach, describe, expect, test } from 'vitest'
+import { afterEach, describe, expect, test } from 'vite-plus/test'
 import VPDoc from '../../packages/theme/src/theme/components/VPDoc.vue'
 import { LONG_TEXTS } from '../../shared/vitepress-harness/long-text.js'
 import { declarationsFor, readComponentStyles } from '../support/css.js'
